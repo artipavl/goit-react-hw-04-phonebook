@@ -6,7 +6,7 @@ export const Filter = ({ change, value }) => {
       <p>Find contacts by name</p>
       <input
         value={value}
-        onChange={change}
+        onChange={e => change(e.target.value)}
         type="text"
         name="filter"
         title="filter"
