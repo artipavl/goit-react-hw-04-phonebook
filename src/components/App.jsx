@@ -40,10 +40,10 @@ export function App() {
     name.toLowerCase().includes(filter.toLowerCase())
   );
 
-  // const contactsFil = useReducer(() => contacts.filter(({ name }) =>
+  // const contactsFil = useMemo(() => contacts.filter(({ name }) =>
   //     name.toLowerCase().includes(filter.toLowerCase())
   //   )
-  // , [filter]);
+  // , [contacts, filter]);
 
   return (
     <div>
